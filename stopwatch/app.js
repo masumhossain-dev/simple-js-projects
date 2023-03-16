@@ -1,4 +1,4 @@
-function{
+
    var seconds = 00;
    var tens = 00;
    var appendSecond = document.getElementById('seconds');
@@ -33,8 +33,12 @@ function{
       }
       if(tens>99){
          seconds++;
-         appendSecond.innerHTML = seconds;
+         appendSecond.innerHTML = '0'+seconds;
+         tens=0;
+         appendTens.innerHTML = '0' + tens;
          
       }
+      if(seconds>9){
+         appendSecond.innerHTML = seconds;
+      }
    }
-}
