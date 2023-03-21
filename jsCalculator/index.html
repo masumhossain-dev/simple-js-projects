@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Js Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section>
+      <div">
+         <input id="displayField" class="inputField" type="text">
+      </div>
+
+      <div>
+         <input onclick="clr()" class="btn" type="button" value="AC">
+         <input class="btn" type="button" value="&#177">
+         <input onclick="button('%')" class="btn" type="button" value="%">
+         <input onclick="button('/')" class="btn" type="button" value="&#247">
+      </div>
+      <div>
+         <input onclick="button('7')" class="btn" type="button" value="7">
+         <input onclick="button('8')" class="btn" type="button" value="8">
+         <input onclick="button('9')" class="btn" type="button" value="9">
+         <input onclick="button('*')" class="btn" type="button" value="&#215">
+      </div>
+      <div>
+         <input onclick="button('4')" class="btn" type="button" value="4">
+         <input onclick="button('5')" class="btn" type="button" value="5">
+         <input onclick="button('6')" class="btn" type="button" value="6">
+         <input onclick="button('-')" class="btn" type="button" value="-">
+      </div>
+      <div>
+         <input onclick="button('1')" class="btn" type="button" value="1">
+         <input onclick="button('2')" class="btn" type="button" value="2">
+         <input onclick="button('3')" class="btn" type="button" value="3">
+         <input onclick="button('+')" class="btn" type="button" value="+">
+      </div>
+      <div>
+         <input onclick="button('0')" class="btn" type="button" value="0">
+         <input onclick="button('.')" class="btn" type="button" value=".">
+         <input onclick="equal()" class="btn" type="button" value="=">
+      </div>
+
+   </section>
+
+
+   <script src="app.js"></script>
+</body>
+</html>
